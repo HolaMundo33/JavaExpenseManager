@@ -2,5 +2,8 @@
 public class Expense {
     public Expense(){
         //Este será el constructor 
+        int gastos;
     }
+
+    //Falta crear métodos
 }
