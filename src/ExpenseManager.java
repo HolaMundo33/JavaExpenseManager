@@ -16,6 +16,7 @@ public class ExpenseManager {
 	ArrayList<Expense> listaGastos = new ArrayList<>();
 
 	public void AgregarGasto() {
+		
 		Scanner scanner = new Scanner(System.in);
 
 		Expense gastoAgregado = new Expense(0, "No hay gasto");

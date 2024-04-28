@@ -41,19 +41,25 @@ public class Main {
                 break;
 
             case 4:
-                lista.GuardarGastos();
+                //lista.GuardarGastos();
+                System.out.println("Opción no disponible en estos momentos");
                 break;
 
             case 5:
-                lista.CargarGastos();
+                //lista.CargarGastos();
+                System.out.println("Opción no disponible en estos momentos");
+
                 break;
 
             case 6:
                 System.out.println("Cerrando aplicación...");
                 break;
 
-                default:
-                System.out.println("Elige otra opción, por favor: ");
+            default:
+                System.out.println("Teclee una de las opciones anteriores");
+                opcion=sc.nextInt();
+                
+            
         }
 
 
