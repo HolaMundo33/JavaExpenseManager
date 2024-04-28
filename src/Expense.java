@@ -6,8 +6,8 @@ public class Expense {
 
 
     //Constructor de la clase 
-    public Expense(int cantidad, String tipo){
-        this.concepto=tipo;
+    public Expense(int cantidad, String concepto){
+        this.concepto=concepto;
         this.cantidad=cantidad;
         
     }

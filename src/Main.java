@@ -1,11 +1,12 @@
 // Main application class that provides a console interface for managing expenses.
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
 
 public class Main {
     
-    public static void main(String args[]){
+    public static void main(String args[]) throws IOException{
 
 
         //Variables de código
@@ -36,15 +37,15 @@ public class Main {
                 break;
 
             case 3:
-                SumarizarGastos();
+                lista.SumarizarGastos();
                 break;
 
             case 4:
-                GuardarGastos();
+                lista.GuardarGastos();
                 break;
 
             case 5:
-                CargarGastos();
+                lista.CargarGastos();
                 break;
 
             case 6:
