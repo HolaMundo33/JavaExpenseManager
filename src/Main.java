@@ -43,7 +43,7 @@ public class Main {
                 break;
 
             case 5:
-                CargaraGastos();
+                CargarGastos();
                 break;
 
             case 6:
@@ -52,9 +52,6 @@ public class Main {
 
                 default:
                 System.out.println("Elige otra opción, por favor: ");
-
-
-            
         }
 
 
