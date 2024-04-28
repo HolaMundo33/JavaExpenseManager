@@ -28,27 +28,31 @@ public class Main {
 
         switch (opcion) {
             case 1:
-
+                AgregarGasto();
                 break;
             case 2:
-
+                ListarGastos();
                 break;
 
             case 3:
-
+                SumarizarGastos();
                 break;
 
             case 4:
-
+                GuardarGastos();
                 break;
 
             case 5:
-
+                CargaraGastos();
                 break;
 
             case 6:
-    
+                System.out.println("Cerrando aplicación...");
                 break;
+
+                default:
+                System.out.println("Elige otra opción, por favor: ");
+
 
             
         }
