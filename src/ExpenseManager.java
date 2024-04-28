@@ -39,7 +39,7 @@ public class ExpenseManager {
 
 		}
 	}
-
+	
 	public void SumarizarGastos() {
 		int total = 0;
 		String cate;
@@ -54,31 +54,16 @@ public class ExpenseManager {
 			}
 		}
 
-		System.out.println("Total gastos en '" + cate + "': " + total);
-
+		System.out.println("Total gastos en '"+cate+"': "+total);
+		
 	}
-
-	public void GuardarGastos() throws IOException {
-
-		//ERRORES A LA DE GUARDAR PENDIENTES DE PROGRAMACIÓN
-		String ruta = "";
-		File archivo = new File("gastos.txt");
-		FileWriter fw = new FileWriter(archivo);
-		BufferedWriter bw = new BufferedWriter(fw);
-		if (archivo.exists()) {
-
-						
-		} else {
-			// El fichero no existe y hay que crearlo
-			bw = new BufferedWriter(new FileWriter(archivo));
-			bw.close(); // Debe cerrarse la escritura del fichero
-		}
-
+	
+	public void GuardarGastos() {
+		
 	}
-
+	
 	public void CargarGastos() {
-
-		//ERRORES A LA HORA DE CARGAR ARCHIVOS PENDIENTES DE DESARROLLO
+		
 	}
 
 }
