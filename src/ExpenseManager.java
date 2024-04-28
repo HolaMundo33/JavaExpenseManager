@@ -9,7 +9,7 @@ public class ExpenseManager {
     int cantidad;
     String concepto;
 
-    ArrayList<Gasto> listaGastos = new ArrayList<>();
+    ArrayList<Expense> listaGastos = new ArrayList<>();
 	
 	
 	public AgregarGasto () {
