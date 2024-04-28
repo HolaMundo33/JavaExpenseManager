@@ -11,6 +11,7 @@ public class Main {
         //Variables de código
         int opcion;
         Scanner sc = Scanner(System.in);
+        ExpenseManager lista = new ExpenseManager();
 
 
         System.out.println("Bienvenido al Sistema de Registro de Gastos Personales ");
@@ -28,10 +29,10 @@ public class Main {
 
         switch (opcion) {
             case 1:
-                AgregarGasto();
+                lista.AgregarGasto();
                 break;
             case 2:
-                ListarGastos();
+                lista.ListarGastos();
                 break;
 
             case 3:

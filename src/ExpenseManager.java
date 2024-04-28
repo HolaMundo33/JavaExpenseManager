@@ -35,9 +35,28 @@ public class ExpenseManager {
 
 		}
 	}
+<<<<<<< HEAD
 
 	public SumarizarGastos() {
 		//comentario de prueba
+=======
+	
+	public void SumarizarGastos() {
+		int total=0;
+		String cate;
+		Scanner sc = new Scanner(System.in);
+
+		cate=sc.nextLine();
+
+		for (Expense expense : listaGastos) {
+			if (expense.getConcepto().equals(cate)) {
+				total+=expense.getCantidad();
+				
+			}
+		}
+
+		System.out.println("Total gastos en '"+cate+"': "+total);
+>>>>>>> 17b88be48d3b3e282b8e56b723b5f33ef1e08645
 		
 	}
 
