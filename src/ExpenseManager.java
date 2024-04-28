@@ -12,27 +12,37 @@ public class ExpenseManager {
     ArrayList<Expense> listaGastos = new ArrayList<>();
 	
 	
-	public AgregarGasto () {
+	public void AgregarGasto () {
+        Scanner scanner = new Scanner(System.in);
+
+
+        Expense gastoAgregado = new Expense(0,"No hay gasto");
 		
-		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Concepto: ");
 		
-		concepto = scanner.nextLine();
+		gastoAgregado.setConcepto(scanner.nextLine());
 		
 		System.out.println("Cantidad: ");
 		
-		cantidad = scanner.nextInt();
+		gastoAgregado.setCantidad(scanner.nextInt()); 
 		
-		Gasto nuevoGasto = Gasto (concepto, cantidad);
-		
+
+		listaGastos.add(gastoAgregado);
+		scanner.close();
 	}
 	
-	public ListarGastos() {
+	public void ListarGastos() {
+
 		
+	     for (Expense i : listaGastos) {
+			System.out.println("Monto: "+i.getCantidad()+" Categoría: "+i.getConcepto());
+			
+		}
 	}
 	
 	public SumarizarGastos() {
+		//comentario de prueba
 		
 	}
 	

@@ -2,14 +2,33 @@
 public class Expense {
 
     int cantidad; //Cantidad de dinero gastado
-    String tipo; //Tipo de gasto: comidad, hogar, factura...
+    String concepto; //Tipo de gasto: comidad, hogar, factura...
 
 
     //Constructor de la clase 
     public Expense(int cantidad, String tipo){
-        this.tipo=tipo;
+        this.concepto=tipo;
         this.cantidad=cantidad;
         
+    }
+
+
+    public void setCantidad(int cantidad){
+
+        this.cantidad=cantidad;
+    }
+    
+    public void setConcepto(String concepto){
+        this.concepto=concepto;
+
+    }
+
+    public int getCantidad(){
+        return cantidad;
+    }
+
+    public String getConcepto(){
+        return concepto;
     }
 
     //Falta crear métodos
