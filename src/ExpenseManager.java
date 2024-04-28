@@ -42,6 +42,7 @@ public class ExpenseManager {
 	}
 	
 	public SumarizarGastos() {
+		//comentario de prueba
 		
 	}
 	
